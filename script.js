@@ -47,7 +47,7 @@ function addNewPhotos(photos) {
     photos.forEach((photo) => renderPhoto(photo.webformatURL));
 }
 
-function debounce(func, timeout = 100) {
+function debounce(func, timeout = 1000) {
     let timer;
     return (...args) => {
         clearTimeout(timer);
